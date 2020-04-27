@@ -6,11 +6,36 @@
     <meta name ='description' content='Personal blog site using HTML and CSS'>
     <title>My Travels</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href='./css/style.css' type='text/css' rel='stylesheet'>
 </head>
-<body>
-    <header>
-        <h3>My Travels</h3>
+<body class='site-body'>
+    <header class='site-header'>
+        <h3 class='site-title'>Trvl</h3>
+        <nav>
+            <span>Home</span>
+        </nav>
     </header>
+    <main class='content-area'>
+        <section class='blog-card-section'>
+            <h1 class='section-title'>Blog</h1>
+            <div class='blog-container'>
+                <div class='blog-card'>
+                    <img 
+                    class='blog-card-image'
+                    src='https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1626&q=80'
+                         alt='picture of neighborhood in Japan'
+                    />
+                    <div class='blog-card-text'>
+                        <h4 class='blog-title'>My Trip to Japan</h4>
+                        <a href='./pages/blogpage.html' class='blog-link'>View</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class='site-footer'>
+        <span>Site by Jerry Davidson</span>
+    </footer>
     
 </body>
 </html>
