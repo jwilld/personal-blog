@@ -2,6 +2,7 @@
     font-family: 'Roboto';
     src: url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 }
+@import './mediaqueries.css';
 
 html {
     font-family: Roboto, "Roboto";
@@ -30,8 +31,6 @@ a {
 a:hover {
     color: lightgrey;
 }
-.blog-link{
-}
 .blog-title{
     font-weight: 200;
 }
@@ -56,7 +55,6 @@ body {
     margin: 0 200px 0 200px;
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
-    grid-template-columns: 2fr 1fr;
 }
 
 .site-header {
@@ -81,6 +79,11 @@ body {
     padding-bottom: 20px;
 
     align-self: flex-end;
+}
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
 }
 
 .blog-card {
@@ -187,4 +190,127 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .site-header{
+        padding: 0;
+        margin: 0 10px 0 10px;
+    }
+    .blog-post-area{
+        grid-template-rows: .5fr 10fr 1fr;
+    }
+    .content-area{
+        margin: 0 10px 0 10px;
+        grid-template-rows: .5fr 10fr 1fr;
+    
+    }
+    .blog-container{
+        display: flex;
+        flex-direction:column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .blog-card{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .blog-post-area{
+        margin: 0 10px 0 10px;
+    }
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    .blog-container{
+        display: flex;
+        flex-direction:column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .blog-card{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .blog-post-area{
+        margin: 0 10px 0 10px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .blog-container{
+        display: flex;
+        flex-direction:column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .blog-card{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .blog-post-area{
+        margin: 0 100px 0 100px;
+    }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+.blog-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center; 
+    align-items: center;
+}
+.blog-card{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.blog-post-area{
+    margin: 0 100px 0 100px;
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }
