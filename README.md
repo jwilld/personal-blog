@@ -1,2 +1,5 @@
 # personal-blog
- Blog layout using HTML + CSS only
+ Personal blog page layout. 
+ 
+ 
+ 
